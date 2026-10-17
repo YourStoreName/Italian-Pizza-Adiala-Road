@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italian Pizza | Adiala Road, Rawalpindi — Fresh Pizza &amp; Fast Food</title>
+<meta name="description" content="Italian Pizza on Adiala Road, Munawar Colony, Rawalpindi. Pizza, burgers, Chinese and fast food. Call 051-5574288.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="wrap bar">
+    <a href="#home" class="logo">🍕 <span class="serif">Italian Pizza</span></a>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#deals">Deals</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="btn" data-order>Order Now</button>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Adiala Road · Munawar Colony · Rawalpindi</p>
+      <h1 class="serif" id="tagline"></h1>
+      <p class="urdu" id="urdu"></p>
+      <div class="row">
+        <button class="btn big" data-order>Order Now</button>
+        <a class="btn big ghost" href="#menu">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="wrap section">
+    <h2 class="serif">Our Menu</h2>
+    <div class="tools">
+      <div id="cats" class="chips"></div>
+      <input id="search" type="search" placeholder="Search menu…" aria-label="Search menu">
+    </div>
+    <div id="grid" class="grid"></div>
+    <p class="note">Prices are in PKR and pending owner confirmation — please verify when ordering.</p>
+  </section>
+
+  <section id="deals" class="wrap section">
+    <h2 class="serif">Deals</h2>
+    <div id="dealGrid" class="grid"></div>
+  </section>
+
+  <section id="contact" class="wrap section">
+    <h2 class="serif">Visit &amp; Contact</h2>
+    <div class="grid two">
+      <div class="card pad" id="info"></div>
+      <div class="card pad">
+        <h3>Opening hours</h3>
+        <p class="note" id="hoursNote"></p>
+        <ul id="hours" class="plain"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap">
+  <p id="foot"></p>
+</div></footer>
+
+<a class="callbar" id="callbar">📞 Call to order</a>
+
+<div class="modal" id="modal" hidden>
+  <div class="card pad box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="x" id="close" aria-label="Close">×</button>
+    <h3 id="mTitle">Order</h3>
+    <p id="mItem" class="note"></p>
+    <a class="btn big block" id="mCall"></a>
+    <button class="btn big ghost block" id="mCopy">Copy order message</button>
+    <p class="note" id="mStatus"></p>
+    <p class="note" id="mSvc"></p>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
